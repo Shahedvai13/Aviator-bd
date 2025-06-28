@@ -1,0 +1,72 @@
+<!-- Aviator-BD: Basic Game UI with Admin Panel --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviator-BD Admin Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 1em;
+    }
+    h1 {
+      margin: 0;
+    }
+    .btn {
+      background: seagreen;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn.reject {
+      background: crimson;
+    }
+    .request {
+      border: 1px solid #444;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      background: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel - Aviator-BD</h1>
+    <p>Approve or Reject Withdraw Requests</p>
+  </header>  <div id="requests">
+    <div class="request">
+      <p><strong>User:</strong> user123@gmail.com</p>
+      <p><strong>Amount:</strong> ৳100</p>
+      <button class="btn" onclick="approve(this)">✅ Approve</button>
+      <button class="btn reject" onclick="reject(this)">❌ Reject</button>
+    </div>
+    <div class="request">
+      <p><strong>User:</strong> testuser@email.com</p>
+      <p><strong>Amount:</strong> ৳250</p>
+      <button class="btn" onclick="approve(this)">✅ Approve</button>
+      <button class="btn reject" onclick="reject(this)">❌ Reject</button>
+    </div>
+  </div>  <script>
+    function approve(btn) {
+      const box = btn.parentElement;
+      alert("✅ Request Approved: " + box.querySelector("strong").nextSibling.textContent);
+      box.style.display = 'none';
+    }
+    function reject(btn) {
+      const box = btn.parentElement;
+      alert("❌ Request Rejected: " + box.querySelector("strong").nextSibling.textContent);
+      box.style.display = 'none';
+    }
+  </script></body>
+</html>
