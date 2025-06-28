@@ -1,0 +1,63 @@
+<!-- Aviator-BD: Basic Game UI with Login and Admin Panel Placeholder --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviator-BD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 1em;
+    }
+    h1 {
+      margin: 0;
+    }
+    .btn {
+      background: crimson;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: darkred;
+    }
+    .game-area {
+      margin-top: 50px;
+    }
+    .admin-link {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aviator-BD</h1>
+    <p>Login with Gmail to start</p>
+    <button class="btn" onclick="login()">🔐 Login with Gmail</button>
+  </header>  <div class="game-area">
+    <h2>🚀 Game will appear here after login</h2>
+    <p>[DEMO placeholder]</p>
+    <button class="btn">💰 Deposit</button>
+    <button class="btn">💸 Withdraw</button>
+  </div>  <p class="admin-link" onclick="goToAdmin()">Go to Admin Panel</p>  <script>
+    function login() {
+      alert("Firebase Gmail Login Placeholder - integrate Firebase here");
+    }
+    function goToAdmin() {
+      alert("Redirecting to Admin Panel - under construction");
+    }
+  </script></body>
+</html>
